@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:c="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+</head>
+<body>
+<h2>Список сотрудников</h2>
+
+<table>
+    <tr>
+        <th>Логин</th><th>Пароль</th><th>ФИО</th><th>Возраст</th>>
+    </tr>
+
+        <c:forEach items="${requestScope.personal}" var="personal">
+
+    <tr>
+      <td>${personal.login}</td><td>${personal.password}</td><td>${personal.name</td><td>${personal.age}</td>
+
+</tr>
+    </c:forEach>
+
+</table>
+
+</body>
+</html>
