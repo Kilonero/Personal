@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
-public abstract class EmployeesRepositoryPostgres implements EmployeesRepository {
+public class EmployeesRepositoryPostgres implements EmployeesRepository {
 
     private Map<Long, Employee> map = new ConcurrentHashMap<>();
     private static volatile EmployeesRepositoryPostgres instance;
